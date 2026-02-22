@@ -78,8 +78,8 @@ uv sync --python=$(cat .python-version-default)
 
 If you don't want to use *uv*, you can use Pip 25.1 (that added support for dependency groups) or newer and install the dependencies manually:
 
-```bash
-pip install -e . --group dev
+```console
+$ pip install -e . --group dev
 ```
 
 ---
@@ -137,7 +137,7 @@ $ tox run -e docs-doctests
   assert "foo" == x._a_private_attribute
   ```
 
-- You can run the test suite runs with all dependencies against all supported Python versions -- just as it will in our CI -- by running `tox`.
+- You can run the test suite with all dependencies against all supported Python versions -- just as it will in our CI -- by running `tox`.
 
 - Write [good test docstrings](https://jml.io/test-docstrings/).
 
